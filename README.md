@@ -6,9 +6,6 @@ This is a detailed dashboard created with information on the salary trends acros
 Here is how the final dashboard looks like.
 ![countplot](https://github.com/Farouk-Muda/Data_Science/blob/main/Data_science.png)
 
-## Project Overview
-
-
 ## Objectives
 The primary objectives of this project are:
  - Identify and visualize trends in salary data over time to observe changes and growth.
@@ -16,12 +13,28 @@ The primary objectives of this project are:
  - Explore average salaries across various countries to highlight regional disparities and opportunities.
 
 ## Tools and Technologies
-
-
+- DAX Functions: writing DAX expressions for calculated columns, measures, and advanced data modeling.
+- Power Query: data transformation, cleansing, and shaping using Power Query for ETL processes.
+  
 ## Dataset
-
+- Source: This dataset is obtained from kaggle [Data Science Salary](https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries) It contains informatio
+- Size: It consists of 606 rows and 11 columns. the columns are:
+  1.work_year:	The year in which the work or data record pertains.
+  2.experience_level:	The level of experience of the employee. 
+  3.employment_type:	The type of employment contract.
+  4.job_title	:The title or designation of the job role.
+  5.salary	:The total salary amount (likely in the local currency) received for the job role.
+  6.salary_currency	:The currency in which the salary is paid.
+  7.salary_in_usd: The salary converted into USD for standardized comparison.
+  8.employee_residence: The country or location where the employee resides while working.
+  9.remote_ratio: The proportion of the job that is performed remotely.
+  10.company_location: The country or location where the company is headquartered or operates.
+  11.company_size: The size of the company. 
 
 ## Data Cleaning and Preparation
+- Handling Abbreviated Rows: Converted abbreviated terms to full forms for better understanding in columns such as employment_type, experience_level, employee_residence, and company_size. Example:"FT" → "Full-time", "S" → "Small", "M" → "Medium".
+- Missing Values: In the power query editor, I examined the valid, error and empty under the column quality.
+- Data Normalization: Checked and ensured all salary values are positive integers. 
 
 
 ## Insights
@@ -40,7 +53,7 @@ The primary objectives of this project are:
 - Given the consistent growth in salaries, especially in executive roles, it's crucial for companies to develop clear career progression pathways. Offering opportunities for skill advancement and leadership roles could improve employee retention and attract top talent.
 - Aspiring professionals should aim to upskill, particularly in emerging areas like machine learning and data engineering, to position themselves for high-paying roles like Data Analytics Lead or Principal Data Engineer.
 - Employers should consider offering competitive salaries for mid-level professionals to retain talent and prevent burnout from low compensation at these levels. Structuring a clear differentiation in salary based on experience could foster a sense of value and loyalty among staff.
-- Entry-level workers should be aware that, although salaries are lower at the start, there are significant earning potentials as they gain experience. Middle-level employees might consider seeking new opportunities that provide better compensation.
+- Middle-level employees might consider seeking new opportunities that provide better compensation.
 - Countries like Russia and New Zealand show high salaries, while regions like Nigeria and India have lower averages. A global salary framework should be flexible enough to reflect these differences while maintaining fairness.
 - Those based in lower-paying countries should look for remote or multinational opportunities that offer competitive international salaries, as roles in the United States and Russia show higher earning potentials.
 - Since full-time roles dominate the market, companies should prioritize stable, long-term employment contracts for data science positions to align with industry trends. However, offering flexible work arrangements like part-time or freelance roles could appeal to a broader talent pool.
@@ -51,8 +64,3 @@ The primary objectives of this project are:
 - Data professionals should assess the pros and cons of working at different company sizes. While large companies offer higher salaries, smaller organizations might provide more diverse experiences and career development opportunities.
 - With a retention rate of 0.86, there is room to improve employee satisfaction and workplace policies. Employers should focus on creating a more positive work environment, offering career growth, and improving employee engagement strategies.
 - Job stability in data science roles is relatively high, but professionals should still be mindful of their long-term career goals. Employees should consider roles with growth opportunities to ensure ongoing professional development.
-
-
-
-
-
